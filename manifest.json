@@ -3,6 +3,10 @@
     "name": "B-ify",
     "description": "What's boppin",
     "version": "1.0",
+    "browser_action": {
+        "default_title": "B-ify",
+        "default_popup": "popup.html"
+    },
     "content_scripts": [
         {
             "matches": [
