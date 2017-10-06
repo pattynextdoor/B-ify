@@ -7,6 +7,9 @@
         "default_title": "B-ify",
         "default_popup": "popup.html"
     },
+    "permissions": [
+        "activeTab" 
+    ],
     "content_scripts": [
         {
             "matches": [
