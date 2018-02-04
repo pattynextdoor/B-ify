@@ -14,4 +14,15 @@
             "run_at": "document_end"
         }
     ]
+    "browser_action": {
+        chrome.browserAction.onClicked.addListender(function B-ify)
+            chrome.storage.sync.get('state', function(callback) {
+                if(data.state == 'on') {
+                    chrome.storage.sync.set({state: 'off'});
+                } else {
+                    chrome.storage.sync.set({state: 'on'});
+                }
+            });
+    });
+    }
 }
